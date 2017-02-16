@@ -1,22 +1,22 @@
-# docker-notes
+# Docker Notes
 Bunch of docker commands and helpful reminders
 
-# Build image
+### Build image ###
 
 `docker build -t <name> .`
 
-# Get the image id #
+### Get the image id ###
 
 `docker images -q <name> .`
 
-# Login to Repo #
+### Login to Repo ###
 
 `docker login <hostname:port`
 
-# Tag the image #
+### Tag the image ###
 
 `docker tag <id> <hostname:port>/<name>:latest`
 
-# Push the image #
+### Push the image ###
 
 `docker push <hostname:port>/<name>:latest`
