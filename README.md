@@ -1,4 +1,4 @@
-# Docker Notes
+# Docker Notes #
 
 Bunch of docker commands and helpful reminders
 
@@ -49,3 +49,23 @@ Bunch of docker commands and helpful reminders
 ### Delete all images ###
 
 `docker rmi $(docker images -q)`
+
+# Docker Compose #
+
+### Start up in the foreground ###
+
+docker-compose up
+
+### Start up on anothter thread ###
+
+docker-compose up -d
+
+### Down the containers ###
+
+docker-compose down
+
+### Pull the containers ###
+
+This is most useful when you have an integration server and you want to refresh it on a cron from your private Docker repo
+
+docker-compose pull
