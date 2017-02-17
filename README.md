@@ -55,8 +55,11 @@ Bunch of docker commands and helpful reminders
 ### Build, Tag and Push Latest Image
 
 `docker build -t jclinto1/ubuntu .`
+
 `image_id=$(docker images -q jclinto1/ubuntu)`
+
 `docker tag $image_id jclinto1/ubuntu:latest`
+
 `docker push jclinto1/ubuntu:latest`
 
 # Docker Compose #
