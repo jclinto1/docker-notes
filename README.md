@@ -58,7 +58,7 @@ Bunch of docker commands and helpful reminders
 
 `docker cp <container_id>:<container_path> <host_path>`
 
-`docker cp ec6ed1137c46:/tmp/app.log .
+`docker cp ec6ed1137c46:/tmp/app.log .`
 
 # CI Command Conbinations 
 
