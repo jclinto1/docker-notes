@@ -54,6 +54,24 @@ Bunch of docker commands and helpful reminders
 
 `docker inspect -f '{{.Name}} - {{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' $(docker ps -aq)`
 
+### Copy Files off a Container ###
+
+`docker cp <container_id>:<container_path> <host_path>`
+
+`docker cp ec6ed1137c46:/tmp/app.log .
+
+# CI Command Conbinations 
+
+### Build, Tag and Push Latest Image
+
+`docker build -t jclinto1/ubuntu .`
+
+`image_id=$(docker images -q jclinto1/ubuntu)`
+
+`docker tag $image_id jclinto1/ubuntu:latest`
+
+`docker push jclinto1/ubuntu:latest`
+
 # Docker Compose #
 
 ### Start up in the foreground ###
