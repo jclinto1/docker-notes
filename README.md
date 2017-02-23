@@ -50,6 +50,10 @@ Bunch of docker commands and helpful reminders
 
 `docker rmi $(docker images -q)`
 
+### Find Docker IPAddresses ###
+
+`docker inspect -f '{{.Name}} - {{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' $(docker ps -aq)`
+
 # Docker Compose #
 
 ### Start up in the foreground ###
